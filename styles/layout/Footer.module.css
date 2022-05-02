@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100%;
   margin-top: auto;
-  background-color: #191919;
+  background-color: var(--black);
 }
 
 .wrapper {
