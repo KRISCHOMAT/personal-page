@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       }
     });
 
-    // await transporter.sendMail(mailFormatted);
+    await transporter.sendMail(mailFormatted);
 
     res.status(200).json({ success: true, msg: "send message!" });
   } catch (error) {
