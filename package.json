@@ -1,4 +1,7 @@
 {
+  "cacheDirectories": [
+    ".next/cache"
+  ],
   "name": "personal-page",
   "version": "0.1.0",
   "private": true,
