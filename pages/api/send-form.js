@@ -30,9 +30,9 @@ export default async function handler(req, res) {
     to: email,
     subject: "Thanks for getting in touch",
     html: `
-    <h2>Thanks for your message, ${name}</h2>
+    <h2>Thanks for your message, ${name}!</h2>
     <h4>I will reply as soon as I can.</h4>
-    <h4>If you did not write me a message, then someone used your email in my contact form at:</h4>
+    <p>If you did not write me a message, then someone used your email in my contact form at:</p>
     <a href:"https://christian-grothe.krischomat.de">christian-grothe.krischomat.de</a>
     <p>This is an auto generated email</p>
     `,

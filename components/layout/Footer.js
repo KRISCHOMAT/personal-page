@@ -24,9 +24,6 @@ const Footer = () => {
           <Link href="/impressum">
             <a className={classes.linkItem}>Impressum</a>
           </Link>
-          <Link href="/agb">
-            <a className={classes.linkItem}>AGB</a>
-          </Link>
         </div>
         <div className={classes.footerCell}>
           <h3 className={classes.heading}>connect</h3>

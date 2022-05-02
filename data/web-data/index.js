@@ -1,6 +1,7 @@
 import { todoImg } from "../../public/images/todo";
 import { kosmoImg } from "../../public/images/kosmorama";
 import { soundImg } from "../../public/images/sound-memory";
+import { personalImg } from "../../public/images/personal-page";
 
 import kosmoMusicImg from "../../public/images/music/kosmo-vid-still-edit.jpg";
 import krysheMusicImg from "../../public/images/music/kryshe.jpg";
@@ -20,6 +21,15 @@ export const webProjects = [
     images: todoImg,
   },
   {
+    title: "Kosmorama",
+    techs: ["react", "canvas"],
+    links: [
+      { name: "Live", url: "https://www.kosmorama-music.com/" },
+      { name: "GitHub", url: "https://github.com/KRISCHOMAT/kosmorama" },
+    ],
+    images: kosmoImg,
+  },
+  {
     title: "Sound Memory",
     techs: ["HTML", "Javascrip", "Bootstrap"],
     links: [
@@ -29,13 +39,13 @@ export const webProjects = [
     images: soundImg,
   },
   {
-    title: "Kosmorama",
-    techs: ["react", "canvas"],
+    title: "This Page",
+    techs: ["next.js", "node", "nodemailer"],
     links: [
-      { name: "Live", url: "https://www.kosmorama-music.com/" },
-      { name: "GitHub", url: "https://github.com/KRISCHOMAT/kosmorama" },
+      { name: "Live", url: "https://christian-grothe.krischomat.de/" },
+      // { name: "GitHub", url: "https://github.com/KRISCHOMAT/kosmorama" },
     ],
-    images: kosmoImg,
+    images: personalImg,
   },
 ];
 
