@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import nodemailer from "nodemailer";
-require("dotenv").config();
+//require("dotenv").config();
 
 export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
@@ -14,28 +14,28 @@ export default async function handler(req, res) {
   });
 
   try {
-    const { name, email, subject, msg } = JSON.parse(req.body);
+    // const { name, email, subject, msg } = JSON.parse(req.body);
 
-    const mailFormatted = {
-      from: process.env.EMAIL,
-      to: process.env.EMAIL,
-      subject: subject,
-      html: `
-        <h3>message from: ${name}</h3>
-        <h3>email: ${email}</h3>
-        <p>${msg}</p>
-        `,
-    };
+    // const mailFormatted = {
+    //   from: process.env.EMAIL,
+    //   to: process.env.EMAIL,
+    //   subject: subject,
+    //   html: `
+    //     <h3>message from: ${name}</h3>
+    //     <h3>email: ${email}</h3>
+    //     <p>${msg}</p>
+    //     `,
+    // };
 
-    await transporter.verify((error) => {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("ready to send");
-      }
-    });
+    // await transporter.verify((error) => {
+    //   if (error) {
+    //     console.log(error);
+    //   } else {
+    //     console.log("ready to send");
+    //   }
+    // });
 
-    await transporter.sendMail(mailFormatted);
+    // await transporter.sendMail(mailFormatted);
 
     res.status(200).json({ success: true, msg: "send message!" });
   } catch (error) {
