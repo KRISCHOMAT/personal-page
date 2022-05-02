@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Heading from "../components/layout/Heading";
 
 const datenschutz = () => {
