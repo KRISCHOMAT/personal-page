@@ -16,12 +16,26 @@ export default async function handler(req, res) {
   const mailFormatted = {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
-    subject: subject,
+    subject: "new message",
     html: `
         <h3>message from: ${name}</h3>
         <h3>email: ${email}</h3>
+        <h3>subjest: ${subject}</h3>
         <p>${msg}</p>
         `,
+  };
+
+  const mailToClient = {
+    from: process.env.EMAIL,
+    to: email,
+    subject: "Thanks for getting in touch",
+    html: `
+    <h2>Thanks for your message, ${name}</h2>
+    <h4>I will reply as soon as I can.</h4>
+    <h4>If you did not write me a message, then someone used your email in my contact form at:</h4>
+    <a href:"https://christian-grothe.krischomat.de">christian-grothe.krischomat.de</a>
+    <p>This is an auto generated email</p>
+    `,
   };
 
   try {
@@ -31,9 +45,9 @@ export default async function handler(req, res) {
       throw new Error("verification failed");
     }
 
-    const response = await transporter.sendMail(mailFormatted);
+    await transporter.sendMail(mailFormatted);
+    await transporter.sendMail(mailToClient);
 
-    console.log(response);
     res.status(200).json({ success: true });
   } catch (error) {
     console.log(error);
