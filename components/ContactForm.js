@@ -37,7 +37,7 @@ const ContactForm = () => {
         method: "POST",
         body: JSON.stringify(values),
       });
-      console.log(response);
+      console.log(response.data);
 
       setButtonName("thanks for your message");
       setTimeout(() => {

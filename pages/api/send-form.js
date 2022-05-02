@@ -1,8 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import nodemailer from "nodemailer";
 //require("dotenv").config();
+//import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
+  const nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
     host: process.env.HOST,
     port: "465",
@@ -37,7 +38,7 @@ export default async function handler(req, res) {
 
     await transporter.sendMail(mailFormatted);
 
-    res.status(200).json({ success: true, msg: "send message!" });
+    res.status(200).json({ success: true, msg: "send mail" });
   } catch (error) {
     console.log(error);
     res.status(400).json({ success: false, msg: error });
