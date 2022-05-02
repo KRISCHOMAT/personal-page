@@ -30,7 +30,9 @@ const Carousel = ({ title, images }) => {
   return (
     <div className={classes.container}>
       <div className={classes.imageContainer}>
-        <Image src={images[recentImg]} alt={title} priority />
+        <Parallax speed={-5}>
+          <Image src={images[recentImg]} alt={title} priority />
+        </Parallax>
       </div>
       <div className={classes.arrowLeft} onClick={backward}>
         <FiArrowLeft size={40} />
