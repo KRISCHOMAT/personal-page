@@ -17,7 +17,7 @@ const ProjectBanner = ({ name, image, url }) => {
           </div>
           <Parallax speed={-10}>
             <div className={classes.imageContainer}>
-              <Image src={image} alt="synth" />
+              <Image src={image} alt="synth" priority />
             </div>
           </Parallax>
         </div>

@@ -8,7 +8,7 @@ const ProfileImage = () => {
     <div className={classes.container}>
       <div className={classes.image}>
         <Parallax speed={-5}>
-          <Image src={profile} alt="profile" />
+          <Image src={profile} alt="profile" priority />
         </Parallax>
       </div>
     </div>

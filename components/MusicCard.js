@@ -9,7 +9,7 @@ const MusicCard = ({ title, image, info, sideInfo, links }) => {
 
       <div className={classes.imageContainer}>
         <div className={classes.image}>
-          <Image src={image} alt="kosmorama" />
+          <Image src={image} alt={title} priority />
         </div>
       </div>
 

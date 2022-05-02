@@ -29,20 +29,6 @@ const WebCard = ({ title, images, techs, links }) => {
       <h2 className={classes.title}>{title}</h2>
       <Carousel title={title} images={images} />
 
-      {/* <div className={classes.carousel}>
-        <div className={classes.imageContainer}>
-          <Parallax speed={-5}>
-            <Image src={images[recentImg]} alt={title} />
-          </Parallax>
-        </div>
-        <div className={classes.arrowLeft} onClick={backward}>
-          <FiArrowLeft size={40} />
-        </div>
-        <div className={classes.arrowRight} onClick={forward}>
-          <FiArrowRight size={40} />
-        </div>
-      </div> */}
-
       <div className={classes.footer}>
         <div className={classes.technologies}>
           <ul className={classes.list}>
