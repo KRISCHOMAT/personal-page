@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.3rem;
+  align-self: flex-start;
+  letter-spacing: 0.4rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.sideInfo {
+  margin: auto;
+  text-align: center;
+}
+
+.links {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.linksHeading {
+  margin-right: 20px;
+}
+
+.linkItem {
+  margin-right: 8px;
+}
+
+.hr {
+  width: 50%;
+  border: 1px solid var(--red-dark);
+}
+
+.imageContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+}
+
+.info {
+  align-self: center;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  width: 90%;
+}

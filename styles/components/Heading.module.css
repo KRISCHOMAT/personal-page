@@ -1,0 +1,44 @@
+@keyframes fadeIn {
+  from {
+    bottom: 100vh;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.container {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  animation: fadeIn;
+  animation-duration: 0.8s;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+
+.mediumSize {
+  font-size: 2rem;
+}
+
+.hr {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 0;
+  border: 1.4px solid var(--decoration);
+}

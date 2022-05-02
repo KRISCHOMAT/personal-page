@@ -1,0 +1,5 @@
+.container {
+  cursor: pointer;
+  margin-left: 20px;
+  color: var(--white);
+}

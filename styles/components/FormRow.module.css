@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 9px;
+}
+
+.label {
+  font-size: 1.23rem;
+  margin-bottom: 10px;
+  align-self: start;
+}
+
+.input {
+  height: 35px;
+  width: 100%;
+  border: 0;
+  background-color: var(--white);
+}
+
+.area {
+  background-color: var(--white);
+  border: 0;
+}

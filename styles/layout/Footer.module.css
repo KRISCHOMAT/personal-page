@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  background-color: #191919;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.footerCell {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkItem {
+  margin-top: 10px;
+}

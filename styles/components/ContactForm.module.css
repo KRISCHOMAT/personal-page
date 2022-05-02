@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+  from {
+    right: 100vw;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.hr {
+  width: 50%;
+  border: 1px solid var(--red-dark);
+  margin-bottom: 40px;
+}

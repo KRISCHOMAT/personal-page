@@ -1,0 +1,85 @@
+@keyframes fadeIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    top: 0;
+  }
+  to {
+    top: -150px;
+  }
+}
+
+.headerContainer {
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+  background-color: var(--background-color);
+  opacity: 0.98;
+  z-index: 999;
+}
+
+.fadeOut {
+  top: -150px;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+.fadeIn {
+  top: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.headerContainerOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+.logoContainer {
+  left: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.logoHide {
+  display: none;
+}
+
+.menueContainer {
+  font-size: 1.3rem;
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.linkItem {
+  margin: 10px;
+}
+
+.burgerContainer {
+  right: 0;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  color: var(--red-dark);
+}
+
+@media screen and (max-width: 576px) {
+  .menueContainer {
+    display: none;
+  }
+  .burgerContainer {
+    display: flex;
+  }
+}

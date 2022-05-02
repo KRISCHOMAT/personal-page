@@ -1,0 +1,22 @@
+.logoElement {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hrTop {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  height: 0;
+  background-color: var(--decoration);
+  border: 1.4px solid var(--decoration);
+}
+
+.hrBottom {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  height: 0;
+  background-color: var(--decoration);
+  border: 1.4px solid var(--decoration);
+}

@@ -1,0 +1,46 @@
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+}
+
+.arrowRight {
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 100%;
+  margin-right: 10px;
+  color: var(--background-color);
+  opacity: 0.8;
+}
+
+.arrowLeft {
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 100%;
+  margin-left: 10px;
+  color: var(--background-color);
+  opacity: 0.8;
+}
