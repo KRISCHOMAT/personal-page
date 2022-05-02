@@ -50,7 +50,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div onSubmit={handleSubmit} className={classes.container}>
+      <form onSubmit={handleSubmit} className={classes.container}>
         <hr className={classes.hr} />
         <FormRow
           name="name"
@@ -89,7 +89,7 @@ const ContactForm = () => {
             {buttonName}
           </button>
         )}
-      </div>
+      </form>
     </>
   );
 };
