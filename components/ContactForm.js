@@ -33,10 +33,12 @@ const ContactForm = () => {
     setButtonName("sending...");
 
     try {
-      await fetch("/api/send-form", {
+      const response = await fetch("/api/send-form", {
         method: "POST",
         body: JSON.stringify(values),
       });
+      console.log(response);
+
       setButtonName("thanks for your message");
       setTimeout(() => {
         setValues(defaultValues);
