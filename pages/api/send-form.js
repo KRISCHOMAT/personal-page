@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     },
   });
 
-  const { name, email, subject, msg } = JSON.parse(req.body);
+  const { name, email, subject, msg } = req.body;
 
   const mailFormatted = {
     from: process.env.EMAIL,

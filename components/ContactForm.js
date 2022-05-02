@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FormRow from "./FormRow";
 import classes from "../styles/components/ContactForm.module.css";
+import axios from "axios";
 
 const ContactForm = () => {
   const defaultValues = {
@@ -33,15 +34,13 @@ const ContactForm = () => {
     setIsSending(true);
     setButtonName("sending...");
 
+    const headers = {
+      "content-type": "application/json",
+      Accept: "application/json",
+    };
+
     try {
-      const response = await fetch("/api/send-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json, text/plain, */*",
-        },
-        body: JSON.stringify(values),
-      });
+      const response = await axios.post("/api/send-form", values);
       console.log(response);
 
       if (response.status === 200) {
