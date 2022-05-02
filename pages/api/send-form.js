@@ -3,8 +3,8 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     host: process.env.HOST,
-    port: "465",
-    secureConnection: "true", //true or false
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASS,
@@ -37,6 +37,6 @@ export default async function handler(req, res) {
     res.status(200).json({ success: true });
   } catch (error) {
     console.log(error);
-    res.status(400).json({ success: true });
+    res.status(400).json({ success: false });
   }
 }
