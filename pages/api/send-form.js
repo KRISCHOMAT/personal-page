@@ -3,8 +3,8 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     host: process.env.HOST,
-    port: 465,
-    secure: true,
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASS,
