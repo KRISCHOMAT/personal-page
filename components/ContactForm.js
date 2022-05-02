@@ -21,6 +21,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!name || !email || !subject || !msg) {
       setButtonName("provide all values");
       setTimeout(() => {
@@ -37,14 +38,23 @@ const ContactForm = () => {
         method: "POST",
         body: JSON.stringify(values),
       });
-      console.log(response.data);
+      console.log(response);
 
-      setButtonName("thanks for your message");
-      setTimeout(() => {
-        setValues(defaultValues);
-        setIsSending(false);
-        setButtonName("Submit");
-      }, 1500);
+      if (response.status === 200) {
+        setButtonName("thanks for your message");
+        setTimeout(() => {
+          setValues(defaultValues);
+          setIsSending(false);
+          setButtonName("Submit");
+        }, 1500);
+      } else {
+        setButtonName("could not send message");
+        setTimeout(() => {
+          setValues(defaultValues);
+          setIsSending(false);
+          setButtonName("Submit");
+        }, 1500);
+      }
     } catch (error) {
       console.log(error);
     }

@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className={classes.heading}>pages</h3>
           {links.map((link, index) => {
             return (
-              <Link key={index} href={link.name}>
+              <Link key={index} href={link.url}>
                 <a className={classes.linkItem}>{link.name}</a>
               </Link>
             );
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className={classes.footerCell}>
           <h3 className={classes.heading}>rechtliches</h3>
-          <Link href="/disclaimer">
+          <Link href="/datenschutz">
             <a className={classes.linkItem}>Datenschutz</a>
           </Link>
           <Link href="/impressum">
