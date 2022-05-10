@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps }) {
           property="og:image"
           content="https://www.christian-grothe.com/images/og-image.jpg"
         />
-        <meta name="viewport" content="viewport-fit=cover" />
         <meta property="og:site_name" content="Christian Grothe" />
       </Head>
       <div className="wrapper">
