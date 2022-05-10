@@ -28,8 +28,11 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://www.christian-grothe.com" />
         <meta
           property="og:image"
+          itemProp="image"
           content="https://www.christian-grothe.com/images/og-image.jpg"
         />
+        <meta property="og:image:alt" content="profile image" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Christian Grothe" />
       </Head>
       <div className="wrapper">
