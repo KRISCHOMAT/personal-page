@@ -1,29 +1,8 @@
-import Image from "next/image";
 import classes from "../styles/components/WebCard.module.css";
-import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
-import { Parallax } from "react-scroll-parallax";
 import { useState } from "react";
 import Carousel from "./Carousel";
 
 const WebCard = ({ title, images, techs, links }) => {
-  const [recentImg, setRecentImg] = useState(0);
-
-  const forward = () => {
-    if (recentImg == images.length - 1) {
-      setRecentImg(0);
-      return;
-    }
-    setRecentImg(recentImg + 1);
-  };
-
-  const backward = () => {
-    if (recentImg == 0) {
-      setRecentImg(images.length - 1);
-      return;
-    }
-    setRecentImg(recentImg - 1);
-  };
-
   return (
     <div className={classes.container}>
       <h2 className={classes.title}>{title}</h2>

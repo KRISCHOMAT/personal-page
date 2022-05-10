@@ -1,4 +1,4 @@
-import Heading from "../components/layout/Heading";
+import Head from "next/head";
 import ProfileImage from "../components/ProfileImage";
 
 const Index = () => {
