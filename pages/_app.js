@@ -20,9 +20,10 @@ function MyApp({ Component, pageProps }) {
           property="og:title"
           content="Christin Grothe | Webdeveloping | Musicproduction | DIY Instruments"
         />
+        <meta property="og:description" content="Hey I am Christian Grothe, a Webdeveloper and Musicproducer. Have a look at my projects and write me a message if you want to work with me!"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.christian-grothe.com" />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="https://www.christian-grothe.com/images/og-image.jpg" />
         <meta name="viewport" content="viewport-fit=cover" />
         <meta property="og:site_name" content="Christian Grothe" />
       </Head>
