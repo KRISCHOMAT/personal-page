@@ -102,11 +102,16 @@ export const projects = [
     ],
     description:
       "My personal page as a developer with a showcase of some of my project",
-    techs: ["NEXT", "Node", "mongoDB"],
+    techs: ["NEXT.js"],
     links: [
       {
         url: "https://www.christian-grothe.com/",
         name: "Live",
+        icon: "icon",
+      },
+      {
+        url: "https://github.com/KRISCHOMAT/personal-page",
+        name: "GitHub",
         icon: "icon",
       },
     ],
@@ -114,7 +119,7 @@ export const projects = [
   },
 ];
 
-export const getProjects = (tags) => {
+export const getProjects = async (tags) => {
   if (tags.length === 0) {
     return projects;
   }

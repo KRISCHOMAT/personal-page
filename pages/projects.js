@@ -8,6 +8,7 @@ import classes from "../styles/layout/ProjectsContainer.module.css";
 const Projects = () => {
   const [tags, setTags] = useState([]);
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleClick = (e) => {
     if (e.target.checked) {
@@ -22,7 +23,13 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    setProjects(getProjects(tags));
+    const fetchData = async (tags) => {
+      setIsLoading(true);
+      const data = await getProjects(tags);
+      setProjects(data);
+      setIsLoading(false);
+    };
+    fetchData(tags);
   }, [tags]);
 
   return (
@@ -30,6 +37,7 @@ const Projects = () => {
       <Heading title="Projects" />
       <Filter handleClick={handleClick} />
       <div className={classes.container}>
+        {isLoading && <h1>Loading...</h1>}
         {projects.length > 1 ? (
           projects.map((project, id) => {
             return (
