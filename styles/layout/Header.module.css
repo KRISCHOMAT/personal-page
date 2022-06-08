@@ -16,14 +16,17 @@
   }
 }
 
+.menue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .headerContainer {
-  max-width: 900px;
-  margin: auto;
   width: 100%;
   display: flex;
   position: sticky;
   align-items: center;
-  justify-content: space-between;
   min-height: 150px;
   background-color: var(--background-color);
   opacity: 0.98;
@@ -65,6 +68,7 @@
 
 .linkItem {
   margin: 10px;
+  font-size: 1.75rem;
 }
 
 .burgerContainer {
@@ -72,6 +76,8 @@
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  position: absolute;
+  right: 0;
   color: var(--red-dark);
 }
 

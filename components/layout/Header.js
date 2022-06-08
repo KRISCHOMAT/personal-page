@@ -51,20 +51,22 @@ const Header = () => {
             : `${classes.headerContainer} ${classes.fadeOut}`
         }
       >
-        <div className={classes.logoContainer}>
-          <Logo />
-        </div>
-        <div className={classes.menueContainer}>
-          {links.map((link, index) => {
-            return (
-              <Link href={link.url} key={index}>
-                <a className={classes.linkItem}>{link.name}</a>
-              </Link>
-            );
-          })}
-        </div>
-        <div className={classes.burgerContainer} onClick={toggleMenue}>
-          <GiHamburgerMenu size={40} />
+        <div className={classes.menue}>
+          <div className={classes.logoContainer}>
+            <Logo />
+          </div>
+          <div className={classes.menueContainer}>
+            {links.map((link, index) => {
+              return (
+                <Link href={link.url} key={index}>
+                  <a className={classes.linkItem}>{link.name}</a>
+                </Link>
+              );
+            })}
+          </div>
+          <div className={classes.burgerContainer} onClick={toggleMenue}>
+            <GiHamburgerMenu size={40} />
+          </div>
         </div>
       </div>
       <MobileMenue toggle={isShowMenue} handleClick={toggleMenue} />

@@ -21,7 +21,7 @@
   height: 80vh;
   position: fixed;
   right: -100vw;
-  background-color: #191919;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,7 +5,6 @@ const about = () => {
     <main>
       <Heading title="About" />
       <div className="content">
-        <h2>My Story</h2>
         <p>
           During my journey as a musician, I found out that I like experimenting
           with electronics. I started doing effects with Max/MSP and some years
@@ -23,9 +22,6 @@ const about = () => {
           modular synth.
         </p>
         <p>
-          The most important lesson I learned so far is that there is nothing
-          you cannot learn. All the knowlege is just available. The only thing
-          that counts is to not give up and the solution will come. <br />
           So if you want to collaborate on a project or hire me as a frontend
           and/or backend developer, I am happy to read your message!
         </p>

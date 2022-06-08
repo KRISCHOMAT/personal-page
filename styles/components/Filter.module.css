@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  gap: 20px;
+}
+
+.filterContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.filterElement {
+  min-width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.3rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.checkBox {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.hr {
+  width: 50%;
+  border: 1px solid var(--white);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-color: var(--decoration);
+}

@@ -1,4 +1,4 @@
-import classes from "../styles/components/WebCard.module.css";
+import classes from "../styles/components/ProjectCard.module.css";
 import { useState } from "react";
 import Carousel from "./Carousel";
 

@@ -1,24 +1,28 @@
 @keyframes fadeIn {
   from {
-    bottom: 100vh;
+    left: 200px;
   }
   to {
-    bottom: 0;
+    left: -20px;
   }
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
   position: relative;
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  width: fit-content;
   align-self: flex-end;
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  animation: fadeIn;
-  animation-duration: 0.8s;
+  left: -20px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .noMargin {

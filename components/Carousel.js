@@ -29,11 +29,12 @@ const Carousel = ({ title, images }) => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.imageContainer}>
-        <Parallax speed={-5}>
-          <Image src={images[recentImg]} alt={title} priority />
-        </Parallax>
-      </div>
+      <Image
+        src={images[recentImg]}
+        alt={title}
+        layout={"fill"}
+        objectFit={"cover"}
+      />
       <div className={classes.arrowLeft} onClick={backward}>
         <FiArrowLeft size={40} />
       </div>
