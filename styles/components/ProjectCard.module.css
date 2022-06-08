@@ -31,11 +31,11 @@
 }
 
 .hr {
-  width: 50%;
-  border: 1px solid var(--white);
   margin-top: 50px;
-  margin-bottom: 50px;
-  border-color: var(--decoration);
+  width: 50%;
+  border: 2px solid var(--red-dark);
+  background-color: var(--red-dark);
+  border-radius: 10px;
 }
 
 .listItem {

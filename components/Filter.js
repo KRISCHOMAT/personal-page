@@ -3,7 +3,7 @@ import classes from "../styles/components/Filter.module.css";
 const Filter = ({ handleClick }) => {
   return (
     <div className={classes.container}>
-      <h3 className={classes.heading}>Filter</h3>
+      {/* <h3 className={classes.heading}>Filter</h3> */}
       <div className={classes.filterContainer}>
         {/* Frontend */}
         <div className={classes.filterElement}>
@@ -58,7 +58,6 @@ const Filter = ({ handleClick }) => {
           />
         </div>
       </div>
-      <hr className={classes.hr} />
     </div>
   );
 };

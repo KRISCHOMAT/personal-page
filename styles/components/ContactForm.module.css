@@ -19,6 +19,8 @@
 
 .hr {
   width: 50%;
-  border: 1px solid var(--red-dark);
+  border: 2px solid var(--red-dark);
+  background-color: var(--red-dark);
   margin-bottom: 40px;
+  border-radius: 10px;
 }
